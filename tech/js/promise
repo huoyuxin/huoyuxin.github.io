@@ -1,0 +1,5 @@
+基础
+执行顺序：多层嵌套
+原理
+手写实现： promise.all 等
+reject 与 throw区别
