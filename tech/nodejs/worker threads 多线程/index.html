@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Worker Threads</title>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      fetch("./index.md").then(md => {
+        md.text().then(mdJson => {
+          console.log(mdJson);
+          document.getElementById("content").innerHTML = marked(mdJson);
+        });
+      });
+    </script>
+  </body>
+</html>
